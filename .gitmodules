@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = /tmp/axpo_aemet_split/axpo_aemet_backend
+[submodule "frontend"]
+	path = frontend
+	url = /tmp/axpo_aemet_split/axpo_aemet_frontend

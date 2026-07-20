@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# accidental root env
+.env
+
+# local planning notes (not published)
+plan-docs/
