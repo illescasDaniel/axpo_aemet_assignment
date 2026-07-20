@@ -6,15 +6,15 @@ A small weather-observations stack over AEMET OpenData (Antarctic stations), plu
 
 | Path | Role |
 |------|------|
-| [`backend/`](backend/) | FastAPI service (`meteo_service`) — git submodule |
-| [`frontend/`](frontend/) | React SPA (Bun) — git submodule |
+| [`backend/`](https://github.com/illescasDaniel/axpo_aemet_backend) | FastAPI service (`meteo_service`) — git submodule |
+| [`frontend/`](https://github.com/illescasDaniel/axpo_aemet_frontend) | React SPA (Bun) — git submodule |
 | [`assignment.md`](assignment.md) | Original challenge text |
 
 ## Stack
 
-**Backend** — FastAPI with a **hexagonal (ports & adapters)** layout around an `observations` bounded context. Domain and use cases stay free of FastAPI / httpx / SQLAlchemy; adapters cover HTTP, AEMET, and SQLite. Details: [`backend/README.md`](backend/README.md).
+**Backend** — FastAPI with a **hexagonal (ports & adapters)** layout around an `observations` bounded context. Domain and use cases stay free of FastAPI / httpx / SQLAlchemy; adapters cover HTTP, AEMET, and SQLite. Details: [`backend/README.md`](https://github.com/illescasDaniel/axpo_aemet_backend/blob/main/README.md).
 
-**Frontend** — **React 19** + TypeScript, run and bundled with **Bun** (no Vite). TanStack Query for fetches, TanStack Table for the grid, Recharts for per-metric charts. Details: [`frontend/README.md`](frontend/README.md).
+**Frontend** — **React 19** + TypeScript, run and bundled with **Bun** (no Vite). TanStack Query for fetches, TanStack Table for the grid, Recharts for per-metric charts. Details: [`frontend/README.md`](https://github.com/illescasDaniel/axpo_aemet_frontend/blob/main/README.md).
 
 ## Assignment vs delivered
 
@@ -34,7 +34,7 @@ A small weather-observations stack over AEMET OpenData (Antarctic stations), plu
 
 | Asked | Delivered |
 |-------|-----------|
-| Drop the two-station restriction | **Not on `main`**: still allowlisted to `89064` / `89070`. AEMET has no single product that matches Part 1’s shape for all Spanish stations; rationale + dual-product experiment branch in [`backend/README.md`](backend/README.md) |
+| Drop the two-station restriction | **Not on `main`**: still allowlisted to `89064` / `89070`. AEMET has no single product that matches Part 1’s shape for all Spanish stations; rationale + dual-product experiment branch in [`backend/README.md`](https://github.com/illescasDaniel/axpo_aemet_backend/blob/main/README.md) |
 | SQLite cache of source data | Yes — raw samples, empty-miss / any-rows-hit |
 | Proper logging | Yes (cache hit/miss, fetch/upsert counts) |
 
@@ -57,8 +57,8 @@ git clone --recurse-submodules https://github.com/illescasDaniel/axpo_aemet_assi
 
 ## How to run
 
-1. Backend — from [`backend/`](backend/): see [`backend/README.md`](backend/README.md) (`uv sync`, `.env`, `uv run task dev`).
-2. Frontend — from [`frontend/`](frontend/): see [`frontend/README.md`](frontend/README.md) (`bun install`, `.env`, `bun dev`).
+1. Backend — from [`backend/`](https://github.com/illescasDaniel/axpo_aemet_backend): see [`backend/README.md`](https://github.com/illescasDaniel/axpo_aemet_backend/blob/main/README.md) (`uv sync`, `.env`, `uv run task dev`).
+2. Frontend — from [`frontend/`](https://github.com/illescasDaniel/axpo_aemet_frontend): see [`frontend/README.md`](https://github.com/illescasDaniel/axpo_aemet_frontend/blob/main/README.md) (`bun install`, `.env`, `bun dev`).
 
 ## Known gaps (documented)
 
