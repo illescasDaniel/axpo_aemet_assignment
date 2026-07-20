@@ -45,6 +45,10 @@ A small weather-observations stack over AEMET OpenData (Antarctic stations), plu
 | UI to query data in a table, maybe a chart | Filters form, table, and one chart per metric (temp / pressure / speed) |
 | Supporting endpoints if needed | Uses existing observations API (browser → FastAPI via CORS) |
 
+![Filters and temperature chart](docs/images/dashboard_1.jpg)
+
+![Observations table](docs/images/dashboard_2.jpg)
+
 ## Clone
 
 ```bash
