@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = /tmp/axpo_aemet_split/axpo_aemet_backend
+	url = git@github.com:illescasDaniel/axpo_aemet_backend.git
 [submodule "frontend"]
 	path = frontend
-	url = /tmp/axpo_aemet_split/axpo_aemet_frontend
+	url = git@github.com:illescasDaniel/axpo_aemet_frontend.git
